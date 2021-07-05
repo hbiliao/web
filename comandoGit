@@ -1,0 +1,30 @@
+$ git checkout -b <branch>
+$ git push origin <branch>
+
+trabalha
+
+$ git add <files>
+$ git commit -m "<mensagem>"
+$ git push origin <branch>
+
+aguarda teste, test ok
+
+$ git checkout master
+$ git pull
+$ git checkout <branch>
+$ git merge master
+
+se der conflitos corrigimos e após corrigir:
+
+$ git add .
+$ git commit -m "<Fix: msg>"
+$ git push origin <branch>
+
+Finalizando
+$ git checkout master
+$ git merge <branch>
+$ git push
+
+Remover branchs (remoto/local)
+$ git push origin --delete <branch>
+$ git branch -D <branch>

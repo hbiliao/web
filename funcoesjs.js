@@ -215,3 +215,55 @@ const filteredUsers = people.filter( p => p.name.includes( "au" ) )
 //
 //     console.table( people )
 // } )
+
+/*
+* Adicionais testes
+* */
+
+const pessoas = []
+
+pessoa = {
+    nome: "henrique",
+    sobrenome: "bilião",
+    idade: "26",
+}
+pessoas.push(pessoa);
+pessoa = {
+    nome: "jeniffer",
+    sobrenome: "campos",
+    idade: "21",
+}
+pessoas.push(pessoa);
+pessoa = {
+    nome: "henrique",
+    sobrenome: "falcão",
+    idade: "25",
+}
+pessoas.push(pessoa);
+
+pessoa = {
+    nome: "cleo",
+    sobrenome: "santos",
+    idade: "25",
+}
+pessoas.push(pessoa);
+
+
+const nomePessoa = pessoas.find(pessoas => pessoas.nome === "henrique")
+const nomePessoas = pessoas.map(pessoas => pessoas.nome)
+const nomeHenriques = pessoas.filter(pessoas => pessoas.nome === "henrique")
+
+console.log(nomePessoa);
+console.log(nomePessoas);
+console.log(nomeHenriques);
+
+const teste = nomeHenriques.map(pessoas => pessoas.sobrenome)
+console.log(teste);
+
+const nomeHenriques2 = pessoas.filter(pessoas => pessoas.nome === "henrique").map(pessoas => pessoas.sobrenome)
+
+console.log(nomeHenriques2);
+
+const idades = pessoas.filter(pessoas => pessoas.idade >= 25).map(pessoas => pessoas.sobrenome)
+
+console.log(idades);

@@ -220,34 +220,51 @@ const filteredUsers = people.filter( p => p.name.includes( "au" ) )
 * Adicionais testes
 * */
 
+// const pessoas = []
+//
+// pessoa = {
+//     nome: "henrique",
+//     sobrenome: "bilião",
+//     idade: "26",
+// }
+// pessoas.push(pessoa);
+// pessoa = {
+//     nome: "jeniffer",
+//     sobrenome: "campos",
+//     idade: "21",
+// }
+// pessoas.push(pessoa);
+// pessoa = {
+//     nome: "henrique",
+//     sobrenome: "falcão",
+//     idade: "25",
+// }
+// pessoas.push(pessoa);
+//
+// pessoa = {
+//     nome: "cleo",
+//     sobrenome: "santos",
+//     idade: "25",
+// }
+// pessoas.push(pessoa);
+
 const pessoas = []
+function criarPessoa(registros) {
+    pessoa = {
+        nome        : registros.nome        ? registros.nome        : "",
+        sobrenome   : registros.sobrenome   ? registros.sobrenome   : "",
+        idade       : registros.idade       ? registros.idade       : "",
+    }
 
-pessoa = {
-    nome: "henrique",
-    sobrenome: "bilião",
-    idade: "26",
+    pessoas.push(pessoa);
 }
-pessoas.push(pessoa);
-pessoa = {
-    nome: "jeniffer",
-    sobrenome: "campos",
-    idade: "21",
-}
-pessoas.push(pessoa);
-pessoa = {
-    nome: "henrique",
-    sobrenome: "falcão",
-    idade: "25",
-}
-pessoas.push(pessoa);
 
-pessoa = {
-    nome: "cleo",
-    sobrenome: "santos",
-    idade: "25",
-}
-pessoas.push(pessoa);
+criarPessoa({ nome :"henrique", sobrenome : "bilião", idade: "26"})
+criarPessoa({ nome :"jeniffer", sobrenome : "campos", idade: "21"})
+criarPessoa({ nome :"henrique", sobrenome : "falcao", idade: "25"})
+criarPessoa({ nome :"cleo", sobrenome : "santos", idade: "25"})
 
+//console.log(criarPessoa({sobrenome : "outro"}) );
 
 const nomePessoa = pessoas.find(pessoas => pessoas.nome === "henrique")
 const nomePessoas = pessoas.map(pessoas => pessoas.nome)
@@ -267,3 +284,7 @@ console.log(nomeHenriques2);
 const idades = pessoas.filter(pessoas => pessoas.idade >= 25).map(pessoas => pessoas.sobrenome)
 
 console.log(idades);
+
+
+
+

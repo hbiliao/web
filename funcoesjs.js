@@ -285,6 +285,13 @@ const idades = pessoas.filter(pessoas => pessoas.idade >= 25).map(pessoas => pes
 
 console.log(idades);
 
+var testeMap = nomeHenriques.map(pessoas => {
+    return criarPessoa({ nome : pessoas.sobrenome, sobrenome : pessoas.nome, idade: Math.random() * 25}) ;
+});
+
+console.log(pessoas);
+
+
 
 
 

@@ -266,30 +266,34 @@ criarPessoa({ nome :"cleo", sobrenome : "santos", idade: "25"})
 
 //console.log(criarPessoa({sobrenome : "outro"}) );
 
-const nomePessoa = pessoas.find(pessoas => pessoas.nome === "henrique")
+const nomePessoa = pessoas.find(pessoas => pessoas.nome === "henrique").nome
 const nomePessoas = pessoas.map(pessoas => pessoas.nome)
-const nomeHenriques = pessoas.filter(pessoas => pessoas.nome === "henrique")
+const nomeHenriques = pessoas.filter(pessoas => pessoas.nome == "henrique")
+
+const existe = pessoas.some(pessoas => pessoas.nome == "henrique")
 
 console.log(nomePessoa);
-console.log(nomePessoas);
-console.log(nomeHenriques);
+console.log(existe);
+// console.log(nomePessoas);
+// console.log(nomeHenriques);
 
 const teste = nomeHenriques.map(pessoas => pessoas.sobrenome)
-console.log(teste);
+// console.log(teste);
 
 const nomeHenriques2 = pessoas.filter(pessoas => pessoas.nome === "henrique").map(pessoas => pessoas.sobrenome)
 
-console.log(nomeHenriques2);
+//console.log(nomeHenriques2);
 
 const idades = pessoas.filter(pessoas => pessoas.idade >= 25).map(pessoas => pessoas.sobrenome)
 
-console.log(idades);
+// console.log(idades);
 
 var testeMap = nomeHenriques.map(pessoas => {
     return criarPessoa({ nome : pessoas.sobrenome, sobrenome : pessoas.nome, idade: Math.random() * 25}) ;
 });
 
-console.log(pessoas);
+// console.log(pessoas);
+
 
 
 

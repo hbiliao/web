@@ -15,6 +15,8 @@ console.log(`${filha2.nome} tem cabelo ${filha2.corCabelo}`)
 console.log(Object.keys(filha1))
 console.log(Object.keys(filha2))
 
+
+// saber se o atributo veio do proprio objeto ou veio da herança
 for(let key in filha2) {
     filha2.hasOwnProperty(key) ?
         console.log(key) : console.log(`Por herança: ${key}`)

@@ -1,10 +1,14 @@
 function MeuObjeto() {}
+function MeuObjeto2() {}
 console.log(MeuObjeto.prototype)
 
 const obj1 = new MeuObjeto
 const obj2 = new MeuObjeto
+const obj10 = new MeuObjeto2
 console.log(obj1.__proto__ === obj2.__proto__)
 console.log(MeuObjeto.prototype === obj1.__proto__)
+
+console.log(obj10.__proto__ === obj2.__proto__)
 
 MeuObjeto.prototype.nome = 'Anônimo'
 MeuObjeto.prototype.falar = function() {

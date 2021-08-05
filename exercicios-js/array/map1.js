@@ -1,7 +1,9 @@
 const nums = [1, 2, 3, 4, 5]
 
+let a = 0;
 // For com propósito
 let resultado = nums.map(function(e) {
+    //return a += 1;
     return e * 2
 })
 

@@ -20,3 +20,9 @@ const apenasPreco = produto => produto.preco
 
 const resultado = carrinho.map2(paraObjeto).map2(apenasPreco)
 console.log(resultado)
+
+const nums = [1, 2, 3, 4, 5]
+
+let resultado2 = nums.map2((e, indice, array) =>  e * 2 + ' ' + indice + ' ' + array)
+
+console.log(resultado2)

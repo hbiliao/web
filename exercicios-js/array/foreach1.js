@@ -8,3 +8,8 @@ aprovados.forEach(nome => console.log(nome))
 
 const exibirAprovados = aprovado => console.log(aprovado)
 aprovados.forEach(exibirAprovados)
+
+aprovados.forEach((nome,indice) => console.log(`${indice + 1} ${nome}`))
+
+const exibirAprovados2 = (aprovado, indice) => console.log(`${indice + 1}) ${aprovado}`)
+aprovados.forEach(exibirAprovados2)

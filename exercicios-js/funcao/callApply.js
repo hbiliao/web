@@ -16,8 +16,11 @@ console.log(produto.getPreco())
 
 const carro = { preco: 49990, desc: 0.20 }
 
+console.log(typeof carro)
+
 console.log(getPreco.call(produto))
 console.log(getPreco.apply(carro))
 
 console.log(getPreco.call(carro, 0.17, '$')) // call passa o valor direto
 console.log(getPreco.apply(global, [0.17, '$'])) //apply passa por array *unica diferenca do call
+console.log(getPreco.apply(carro, [0.17, '$'])) //apply passa por array *unica diferenca do call

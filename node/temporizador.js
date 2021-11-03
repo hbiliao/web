@@ -1,6 +1,12 @@
 const schedule = require('node-schedule')
 
-const tarefa1 = schedule.scheduleJob('*/5 * 12 * * 2', function () {
+/*
+primeiro parametro é os segundo, a cada quantos segundos será chamada,
+Segundo parametro é a hora que será chamada ou seja as 23 horas
+terceiro é o mes no caso * significa qualquer dia do mes
+ultimo parametro é o dia da semana ou seja 3 seria uma quinta feira
+*/
+const tarefa1 = schedule.scheduleJob('*/5 * 00 * * 3', function () {
     console.log('Executando Tarefa 1!', new Date().getSeconds())
 })
 

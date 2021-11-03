@@ -36,7 +36,9 @@ const getTurma = letra => {
 
 Promise.all([getTurma('A'), getTurma('B'), getTurma('C')])
     .then(turmas => [].concat(...turmas))
-    .then(alunos => alunos.map(aluno => aluno.nome))
+    .then(function (turmas) {
+       return turmas.map(aluno => aluno.nome)
+    })
     .then(nomes => console.log(nomes))
     .catch(e => console.log(e.message))
 

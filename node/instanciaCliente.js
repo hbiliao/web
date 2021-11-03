@@ -1,8 +1,8 @@
-const contadorA = require('./instanciaUnica')
-const contadorB = require('./instanciaUnica')
+const contadorA = require('./instanciaUnica') //objeto foi exportado e node faz cache do objeto
+const contadorB = require('./instanciaUnica') //objeto foi exportado e node faz cache do objeto
 
 const contadorC = require('./instanciaNova')()
-const contadorD = require('./instanciaNova')()
+const contadorD = require('./instanciaNova')() //invocou a instacia do objeto por isso não faz cache
 
 contadorA.inc()
 contadorA.inc()

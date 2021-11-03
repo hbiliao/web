@@ -7,4 +7,5 @@ function tag(partes, ...valores) {
 
 const aluno = 'Gui'
 const situacao = 'Aprovado'
-console.log(tag `${aluno} está ${situacao}.`)
+const nome = 'henrique'
+console.log(tag `${aluno} está ${situacao}. ${nome} apenas aconteceu`)

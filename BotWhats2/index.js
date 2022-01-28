@@ -45,8 +45,8 @@ venom
 
 function start(client) {
     client.onMessage((message) => {
-            let atendente = '555186265305@c.us'; //numero gas, moto g6
-            //let atendente = '555186438281@c.us'; // numero pessoal, g8 power
+            //t atendente = '0000000000000000;
+            //let atendente = "000000000000000";
 
             if (message.isGroupMsg === false) {
 

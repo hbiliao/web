@@ -295,7 +295,8 @@ var testeMap = nomeHenriques.map(pessoas => {
 // console.log(pessoas);
 
 
+var frutas = ['Maçã', 'Banana'];
 
+frutas.forEach(teste => console.log((teste)));
 
-
-
+//console.log(frutas.length);

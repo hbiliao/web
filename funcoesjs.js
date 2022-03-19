@@ -263,6 +263,7 @@ criarPessoa({ nome :"henrique", sobrenome : "bilião", idade: "26"})
 criarPessoa({ nome :"jeniffer", sobrenome : "campos", idade: "21"})
 criarPessoa({ nome :"henrique", sobrenome : "falcao", idade: "25"})
 criarPessoa({ nome :"cleo", sobrenome : "santos", idade: "25"})
+criarPessoa({ nome :"leniria", sobrenome : "santos"})
 
 //console.log(criarPessoa({sobrenome : "outro"}) );
 
@@ -292,10 +293,12 @@ var testeMap = nomeHenriques.map(pessoas => {
     return criarPessoa({ nome : pessoas.sobrenome, sobrenome : pessoas.nome, idade: Math.random() * 25}) ;
 });
 
-// console.log(pessoas);
+console.log(testeMap)
+
+//console.log(pessoas);
 
 
-var frutas = ['Maçã', 'Banana'];
+var frutas = ['Maçã torta', 'Banana'];
 
 frutas.forEach(teste => console.log((teste)));
 
